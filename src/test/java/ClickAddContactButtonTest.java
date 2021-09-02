@@ -1,5 +1,3 @@
-package java;
-
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -30,11 +28,11 @@ public class ClickAddContactButtonTest extends DriverSetup {
 
         logger.info(String.format("The Add Contact button is clicked, page title is: %s", pageTitle));
 
-        Assert.assertEquals("Unexpected page is opened","Add Contact", pageTitle);
+        Assert.assertEquals("Unexpected page is opened", "Add Contact", pageTitle);
     }
 
     @AfterClass
-    public static void tearDown() throws Exception {
+    public static void tearDown() {
         driver.quit();
     }
 }
